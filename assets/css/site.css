@@ -1,0 +1,275 @@
+/********************************************
+*   reset from
+*   http://meyerweb.com/eric/tools/css/reset/
+*******************************************/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+ul {
+  padding-left: 1.2em;
+}
+
+body {
+    padding-top: 2.5rem;
+    padding-bottom: 1.5rem;
+    /*font-size: 10px;*/
+
+    font-family: 'Open Sans' ,'Lato', sans-serif;
+    /*font-family: 'Helvetica', sans-serif;*/
+    font-weight: 300;
+
+    /*background-color: #00b5ec;*/
+    background-color: #fff;
+    /*background-color: rgb(250, 250, 250);*/
+}
+
+h1 { 
+    font-size: 2.5em;
+    font-weight: 300;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+p {
+  margin-top: 0.5rem;
+}
+
+header {
+  margin-bottom: 5em;
+}
+
+section {
+  /*margin-top: 5em;*/
+}
+
+/* Customize container */
+@media (min-width: 49em) {
+  .container {
+    max-width: 44em;
+  }
+}
+
+
+.drawing {
+    float: left;
+    width: 50%;
+}
+
+a,
+a:focus,
+a:hover {
+    color: #0095ff;
+}
+
+a.art,
+a.art:focus,
+a.art:hover {
+  font-weight: 300;
+  color: #FF00FF;
+}
+
+img[alt=img] { max-width: 100%; }
+
+
+
+/*****************
+ *    Pubs    *
+ *****************/
+#pubs a {
+  /*font-size: 0.8em;*/
+  color: black;
+  /*color: #0095ff;*/
+  /*opacity: 0.6;*/
+  font-size: 1em;
+  /*color: rgba(0,0,0, 0.6);*/
+  font-weight: 400;
+  /*font-weight: 300;*/
+  /*text-decoration: underline;*/
+  /*font-weight: 300;*/
+}
+
+ol {
+  margin-left: 1em;
+  padding-left: -1em;
+}
+
+ol li .title{
+  font-weight: 400;
+  font-size: 1em;
+  /*text-transform: uppercase;*/
+}
+
+ol li .co-author{
+}
+
+ol li .journal{
+}
+
+ol li .co-author, .journal, .year, .pages{
+  font-size: 1em;
+  color: rgba(0,0,0, 0.6);
+  font-weight: 300;
+}
+
+.sub_section {
+  font-size: 1em;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  /*color: #ff00ff;*/
+  /*color: #0095ff;*/
+  color: #009933;
+  /*color: rgba(0,0,0,0.4);*/
+  margin-left: -1em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+
+/*****************
+ *    CV         *
+ *****************/
+
+section.CV-section{
+    clear: both;
+    padding-top: 0em;
+}
+
+section.CV-section ~ section.CV-section {
+    padding-top: 2em;
+}
+
+
+.CV-entry {
+    clear: both;
+}
+
+.CV-entry .date {
+    float: left;
+    width: 10em;
+    height: 1em;
+    color: rgba(0,0,0,0.5);
+    margin-bottom: 0.5em;
+}
+
+.CV-entry .body 
+{
+    float: left;
+    clear: left;
+    margin-bottom: 0.5em;
+}
+
+.CV-entry .body 
+.position, .company, .summary, .tags {
+    float: left;
+    clear: left;
+}
+
+.CV-entry .body 
+.company {
+    /*clear: left;*/
+    color: #0095ff;
+}
+
+.CV-entry .body 
+.position {
+    font-weight: 700;
+    margin-right: 0.4em;
+}
+
+.what {
+    font-weight: 300;
+}
+
+.CV-entry .body 
+.summary{
+    /*display: none;*/
+    /*font-size: 0.82em;*/
+    font-size: 0.82em;
+    /*font-weight: 300;*/
+    /*color: rgba(0,0,0,1);*/
+}
+
+
+.summary a{
+    /*display: none;*/
+    color: #000;
+    /*font-weight: 300;*/
+    /*color: rgba(0,0,0,1);*/
+}
+
+.CV-entry .body 
+.certificate {
+    clear: left;
+    font-size: 0.82em;
+    margin-bottom: 0.5em;
+    /*color: #0095ff;*/
+}
+
+.tags {
+    /*font-size: 0.9em;*/
+    /*font-weight: 700;*/
+        /*color: #0095ff;*/
+        /*color: rgba(0,0,0,0.5);*/
+    display: none;
+}
+.tag {
+    margin-right: 0.4em;
+    float: left;
+}
+
+.clear {
+    clear: left;
+}
+
+.indent {
+    margin-left: 1.0em;
+}
+
+.small {
+    font-size: 0.7em;
+    font-weight: 300;
+}
+
+
+
+/* Customize container */
+@media (min-width: 49em) {
+  .container {
+    max-width: 44rem;
+  }
+  .CV-entry .date {
+    float: left;
+    width: 11em;
+   }
+  .CV-entry .body {
+    clear: none;
+    width: 31em;
+  }
+  .CV-entry .body 
+  .position, .company, .summary {
+        /*clear: none;*/
+  }
+  .CV-entry .summary, .tags {
+
+  }
+
+}
+
