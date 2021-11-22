@@ -4,6 +4,8 @@
 !**/__*__.py
 **/.DS_Store
 
+.jekyll-cache/
+
 # ------------------------------------
 # Everything below comes from nbdev
 # ------------------------------------
